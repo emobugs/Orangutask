@@ -9,12 +9,13 @@ export default class Application extends EventEmitter {
 
   constructor() {
     super();
-
-    const button = document.querySelector(".button");
-    button.addEventListener("click", () => {
-      alert("💣");
-    });
-
+    this.emojis = [];
+    this.banana = "🍌";
     this.emit(Application.events.READY);
   }
+  setEmojis(emojis) {
+    this.emojis = emojis;
+  }
+
+  addBananas() {}
 }
