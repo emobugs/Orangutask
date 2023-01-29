@@ -8,4 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
   app.setEmojis(["🐒", "🦍", "🦧"]);
   app.addBananas();
   window.__JS_APP = app;
+
+
 });
